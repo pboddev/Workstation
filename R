@@ -1,0 +1,6 @@
+#!/bin/bash
+
+SolutionFile="."
+
+open /Applications/"RStudio.app" $SolutionFile
+

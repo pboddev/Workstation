@@ -1,0 +1,28 @@
+#!/bin/bash
+
+
+while getopts a: option
+do
+ case "${option}"
+ in
+ a) APP=${OPTARG};;
+ esac
+done
+
+case "${APP}"
+	in 
+	VS) 
+		SolutionFile=$(ls . | grep *.sln)
+		APPName=$(echo "Visual Studio.app")
+		;;
+	WS) 
+		SolutionFile="."
+		APPName=$(echo "WebStorm.app")
+		;;
+esac
+
+echo $APPName
+echo $SolutionFile
+
+open $APPName $SolutionFile
+

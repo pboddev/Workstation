@@ -1,0 +1,7 @@
+#!/bin/bash
+
+
+SolutionFile=$(ls . | grep *.sln)
+
+open /Applications/"Visual Studio.app" $SolutionFile
+

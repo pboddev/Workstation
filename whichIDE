@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "VS - Visual Studio"
+echo "WS - WebStorm"
+echo "PY - PyCharm"
+echo "R - RStudio"
+echo "IJ - IntelliJ IDEA"
+echo "Sublime - Sublime Text"
+echo "Xcode - XCode"

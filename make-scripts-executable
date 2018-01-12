@@ -1,0 +1,11 @@
+#!/bin/bash
+
+scripts=$(ls . )
+
+for script in $scripts
+do
+   echo $script
+   chmod +x $script
+   cp $script "/usr/local/bin"
+done
+

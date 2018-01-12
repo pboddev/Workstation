@@ -1,0 +1,21 @@
+#!/bin/bash
+while getopts a:f: option
+do
+ case "${option}"
+ in
+ a) APP=${OPTARG};;
+ f) FILE=$OPTARG;;
+ esac
+done
+
+if FILE=""
+	FILE="."
+fi
+
+case "${APP}"
+	in 
+	VS) open /Applications/"Visual Studio.app" FILE;;
+esac
+
+
+

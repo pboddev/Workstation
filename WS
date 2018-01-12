@@ -1,0 +1,7 @@
+#!/bin/bash
+
+
+SolutionFile="."
+
+open /Applications/"WebStorm.app" $SolutionFile
+
